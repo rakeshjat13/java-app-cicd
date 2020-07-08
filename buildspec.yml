@@ -12,6 +12,7 @@ phases:
     post_build:
       commands:
         - echo "Entered the post-build phase"
+        - mvn --projects '!test-api' clean install
 # artifacts:
 #   files:
 #     - '**/*'
