@@ -12,6 +12,9 @@ phases:
     post_build:
       commands:
         - echo "Entered the post-build phase"
+# artifacts:
+#   files:
+#     - '**/*'
+
 artifacts:
-  files:
-    - '**/*'
+- target/surefire-reports/TEST*.xml
