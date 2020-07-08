@@ -12,12 +12,6 @@ phases:
     post_build:
       commands:
         - echo "Entered the post-build phase"
-        - mv target/deploy ./
-        - mvn --projects '!test-api' clean install
 artifacts:
   files:
     - '**/*'
-
-# artifacts:
-#   files:
-#     - target/surefire-reports/TEST*.xml
